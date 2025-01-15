@@ -57,12 +57,9 @@ Feel free to explore my repositories and reach out if you’d like to collaborat
 
 ## 📊 GitHub Stats
 
-![Kübra's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kubranarci&show_icons=true&theme=radical)
-
-## 🗓️ Contribution Graph
-
-[![Kübra's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=kubranarci&theme=radical)](https://github.com/ashutosh00710/github-readme-activity-graph)
+![Kübra's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kubranarci&show_icons=true&theme=default&hide_border=true)  
 
 ## 🔥 Streak Stats
 
-![GitHub Streak](https://streak-stats.demolab.com?user=kubranarci&theme=radical)
+![GitHub Streak](https://streak-stats.demolab.com?user=kubranarci&theme=default&hide_border=true)  
+ 

@@ -6,7 +6,7 @@ I’m also proud to be a **Nextflow Ambassador**, actively supporting and promot
 
 ## 🔬 About Me  
 
-- **Role:** Bioinformatician and Bioinformatic Workflow Engineer 
+- **Role:** Bioinformatician and Bioinformatics Workflow Engineer 
 - **Location:** Heidelberg, Germany  
 - **Organization:** [GHGA](https://github.com/ghga-de) / [DKFZ-ODCF](https://github.com/DKFZ-ODCF)  
 - **Values:** Reproducibility, FAIR Principles, Community Collaboration  
@@ -54,3 +54,15 @@ A LaTeX template for creating professional CVs.
 - **LinkedIn:** [in/kubranarci](https://www.linkedin.com/in/kubranarci/)  
 
 Feel free to explore my repositories and reach out if you’d like to collaborate, discuss workflow development, or attend one of my workshops. Let’s work together to advance bioinformatics!  
+
+## 📊 GitHub Stats
+
+![Kübra's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kubranarci&show_icons=true&theme=radical)
+
+## 🗓️ Contribution Graph
+
+[![Kübra's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=kubranarci&theme=radical)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+## 🔥 Streak Stats
+
+![GitHub Streak](https://streak-stats.demolab.com?user=kubranarci&theme=radical)

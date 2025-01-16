@@ -38,9 +38,8 @@ A standardized Nextflow pipeline for benchmarking variant-calling workflows, ena
 - **Nextflow ACE-Seq Pipeline**: A Nextflow ACE-Seq calling and annotation pipeline.  
   [View Repository](https://github.com/ghga-de/nf-aceseq)  
 
-### 📄 LaTeX CV Template  
-A LaTeX template for creating professional CVs.  
-[View Repository](https://github.com/kubranarci/CV)  
+### 📄 CV  
+[View my professional cv](https://github.com/kubranarci/kubranarci/CV_template.tex)  
 
 ## 🌟 Highlights  
 - **Bioinformatician at GHGA:** Driving the development of reproducible genomic workflows.  

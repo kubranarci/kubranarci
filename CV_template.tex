@@ -1,0 +1,363 @@
+%------------------------------------------------------------------------------
+% CV in Latex
+% Author : Charles Rambo
+% Based off of: https://github.com/sb2nov/resume and Jake's Resume on Overleaf
+% Most recently updated version may be found at https://github.com/fizixmastr 
+% License : MIT
+%------------------------------------------------------------------------------
+
+\documentclass[A4,11pt]{article}
+%\documentclass[letterpaper,11pt]{article} %For use in US
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\input{glyphtounicode}
+
+
+
+%-----FONT OPTIONS-------------------------------------------------------------
+
+
+% serif
+ \usepackage{palatino}
+% \usepackage{times} %This is the default as well
+% \usepackage{charter}
+
+% sans-serif
+% \usepackage{helvet}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+%-----PAGE SETUP---------------------------------------------------------------
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-1cm}
+\addtolength{\evensidemargin}{-1cm}
+\addtolength{\textwidth}{2cm}
+\addtolength{\topmargin}{-1cm}
+\addtolength{\textheight}{2cm}
+
+% Margins for US Letter size
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0cm}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that .pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-----CUSTOM COMMANDS FOR FORMATTING SECTIONS----------------------------------
+\newcommand{\CVItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\CVSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CVSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \text{\small#1} & \text{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CVSubItem}[1]{\CVItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\CVSubHeadingListStart}{\begin{itemize}[leftmargin=0.5cm, label={}]}
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} % Uncomment for US
+\newcommand{\CVSubHeadingListEnd}{\end{itemize}}
+\newcommand{\CVItemListStart}{\begin{itemize}}
+\newcommand{\CVItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%------------------------------------------------------------------------------
+% CV STARTS HERE  %
+%------------------------------------------------------------------------------
+\begin{document}
+
+%-----HEADING------------------------------------------------------------------
+\begin{comment}
+In Europe it is common to include a picture of ones self in the CV. Select
+which heading appropriate for the document you are creating.
+\end{comment}
+
+\begin{minipage}[c]{0.05\textwidth}
+\-\
+\end{minipage}
+\begin{minipage}[c]{0.2\textwidth}
+\begin{tikzpicture}
+    \clip (0,0) circle (1.75 cm);
+    \node at (0,-.3) {\includegraphics[width =5cm]{P8226722.jpg}}; 
+    % if necessary the picture may be moved by changing the at (coordinates)
+    % width defines the 'zoom' of the picture
+\end{tikzpicture}
+\hfill\vline\hfill
+\end{minipage}
+\begin{minipage}[c]{0.4\textwidth}
+    \textbf{\Huge \scshape{Kübra Narcı}} \\ \vspace{1pt} 
+    % \scshape sets small capital letters, remove if desired
+    \small{+90 530-689-6938} \\
+    \href{mailto:kbrnrc@gmail.com}{\underline{kbrnrc@gmail.com}}\\
+    % Be sure to use a professional *personal* email address
+    \href{https://www.linkedin.com/in/kubranarci/}{\underline{linkedin.com/in/kubranarci}} \\
+    % you should adjust you linked in profile name to be professional and recognizable
+    \href{https://github.com/kubranarci}{\underline{github.com/kubranarci}}
+
+\end{minipage}
+
+% Without picture
+%\begin{center}
+%    \textbf{\Huge \scshape Charles Rambo} \\ \vspace{1pt} %\scshape sets small capital letters, remove if desired
+%    \small +1 123-456-7890 $|$ 
+%    \href{mailto:you@provider.com}{\underline{you@provider.com}} $|$\\
+%    % Be sure to use a professional *personal* email address
+%    \href{https://linkedin.com/in/your-name-here}{\underline{linkedin.com/in/charles-rambo}} $|$
+%    % you should adjust you linked in profile name to be professional and recognizable
+%    \href{https://github.com/fizixmastr}{\underline{github.com/fizixmastr}}
+%\end{center}
+
+
+%-----EDUCATION----------------------------------------------------------------
+\section{Education}
+  \CVSubHeadingListStart
+%    \CVSubheading % Example
+%      {Degree Achieved}{Years of Study}
+%      {Institution of Study}{Where it is located}
+    \CVSubheading
+      {{Doctorate $|$ \emph{\small{Medical Informatics}}}}{Sep. 2014 -- Sep 2021}
+      {Middle East Technical University}{Ankara, Turkey}
+    \CVSubheading
+      {{Master of Science $|$ \emph{\small{Bioinformatics}}}}{Aug. 2012 -- Sep 2014}
+      {Middle East Technical University}{Ankara, Turkey}
+    \CVSubheading
+      {{Bachelor $|$ \emph{\small{Molecular Biology and Genetics}}}}{Sep. 2007 -- June 2012}
+      {Middle East Technical University}{Ankara, Turkey}
+  \CVSubHeadingListEnd
+
+%-----WORK EXPERIENCE----------------------------------------------------------
+\begin{comment}
+try to briefly explain what you did and why it is relevant to the position you
+are seeking
+\end{comment}
+
+\section{Work Experience}
+  \CVSubHeadingListStart
+%    \CVSubheading %Example
+%      {What you did}{When you worked there}
+%      {Who you worked for}{Where they are located}
+%      \CVItemListStart
+%        \CVItem{Why it is important to this employer}
+%      \CVItemListEnd
+    \CVSubheading
+      {Bioinformatician}{May 2022 -- Present}
+      {DKFZ - German Human Genome-Phenome Archive (GHGA)}{Heidelberg, Germany}
+      \CVItemListStart
+        \CVItem{Development of an optimized workflow framework using cloud environments in accordance with GH4GH standards. }
+        \CVItem{Improving and translation of Roddy-based ODCF bioinformatic pipelines into more optimized Nextflow pipelines: ghga-de/snvcalling, ghga-de/platypusindelcalling and ghga-de/aceseq.  }
+        \CVItem{Preparation and presentation of NGS harmonization workshops and tutorials: GHGA-Training/gcb\_ngs\_harmonisation\_workshop . }
+        \CVItem{Development of a variant benchmarking pipeline in nf-core standards: nf-core/variantbenchmarking. }   
+        \CVItem{Entitled as Nextflow ambassador in October 2023}        
+        
+      \CVItemListEnd
+    \CVSubheading
+      {Bioinformatics Analyst}{Jan. 2017 -- April 2022}
+      {Seven Bridges Genomics}{Ankara, Turkey}
+      \CVItemListStart
+        \CVItem{Research, analysis and optimization of various bioinformatics softwares, and algorithms for NGS analysis. Used batch scripting, Common Workflow Language (CWL), cloud computing for dockerizing and deployment the tools and workflows in different languages on different Seven Bridges platforms. }
+        \CVItem{Construction of the procedures and pipeline, NGS analysis, populational genomics analysis and reporting of the initial phase of TGP (Turkey Genome Project) which was a government-funded project (2019). }
+        \CVItem{Benchmarking of Seven Bridges GRAF aligner and variant caller, graph-based pipeline construction for the analysis of population-specific analysis (2020). Method investigations and benchmarks for structural variant analysis}
+      \CVItemListEnd
+    \CVSubheading
+      {Bioinformatics Analyst}{Jan. 2014 -- Jan. 2017}
+      {INTERGEN Genetic Diagnostic Center}{Ankara, Turkey}
+      \CVItemListStart
+        \CVItem{ Construction of a pipeline for WGS analysis of truseq data using several software packages. Analysis and management of patient WGS data.}
+        \CVItem{Primer and oligo design for PCR, MLPA data analysis using Coffanalyser}
+      \CVItemListEnd
+  \CVSubHeadingListEnd
+
+%-----PROJECTS AND RESEARCH----------------------------------------------------
+
+\section{Projects and Research}
+  \CVSubHeadingListStart
+%    \CVSubheading
+%      {Title of Work}{When it was done}
+%      {Institution you worked with}{unused}
+    \CVSubheading
+      {Doctoral studies with Prof. Dr. Rengül Çetin-Atalay}{Fall 2014 -- Present}
+      {CanSyl Lab at METU}{Ankara, Turkey}
+      \CVItemListStart
+        \CVItem{Developed a methodology on how to perform a pathway-based analysis with a series of expression profiles of a cancer data using a nonconventional network analysis strategy, differential expression analysis, clustering approaches and visualizations.}
+        \CVItem{Thesis Title: “A systems network approach for differential responses of isoform specific PI3K inhibition which confers Sorafenib resistance in HCC cells”}        
+    \CVItemListEnd
+
+    \CVSubheading
+      {Master studies with Prof. Dr. Mahinur S. Akkaya}{Fall 2012 -- Fall 2014}
+      {Plant Molecular Genetics Lab at METU}{Ankara, Turkey}
+      \CVItemListStart
+        \CVItem{Designed a sequence similarity based clustering approach on human miRNA dataset, and applied them onto analysis of Fungal milRNA predictions.}
+        \CVItem{Thesis Title: “Design of a Sequence Based miRNA Clustering Method; Analysis of Fungal milRNA and Host Organism Target Genes”}   
+    \CVItemListEnd
+    
+     \CVSubheading
+      {Internship with Karl-Heinz Glatting and Dr. Agnes Hotz- Wagenblatt}{June 2013 -- Sep. 2013}
+      {DKFZ-Husar Bioinformatics}{Heidelberg, Germany}
+      \CVItemListStart
+        \CVItem{Developed an integrated package; “compaRNA” which is designed to compare two sets of ncRNA sequence data using DESeq, EdgeR, SAMSeq R packages}
+    \CVItemListEnd
+
+   \CVSubheading
+      {Member of IGEM team}{Fall 2012 -- Fall 2013}
+      {Plant Molecular Genetics Lab at METU}{Ankara, Turkey}
+      \CVItemListStart
+        \CVItem{Participated into an international competition International Genetically Engineered Machines (IGEM) on synthetic biology.} 
+        \CVItem{Worked to develop biological corbon-carbon monixide filter, supervision of the modeling part and web design. Won Bronze Medal at Amsterdam}
+    \CVItemListEnd
+ 
+
+   \CVSubheading
+      {Internship with Prof. Dr. Annette Schenck}{June 2011 -- Sep 2011}
+      {Human Genetics Department of Molecular Life Sciences}{Nijmegen, Netherlands}
+      \CVItemListStart
+        \CVItem{Screening of about 350 ID-genes within a high-throughput behavioral assay using the UAS-Gal4-system in combination with RNA-interference, so that each ID-gene could be silenced one by one specifically within lateral glial cells} 
+    \CVItemListEnd
+
+  \CVSubHeadingListEnd
+
+%-----CONFERENCES AND PRESENTATIONS--------------------------------------------
+\begin{comment}
+Again the title should have already been enough, but if it is necessary to add
+descriptions maintain the consistency from prior sections
+\end{comment}
+
+\section{Conferences and Presentations}
+  \CVSubHeadingListStart
+%    \CVSubheading % Example
+%      {Work Presented}{When}
+%      {Occasion}{}
+    \CVSubheading
+      {ASGH Virtual Meeting}{}
+      {Measuring the effectiveness of population-specific genome graph references on a public Qatari dataset, 2020}{}
+    \CVSubheading
+      {10th International Symposium on Health Informatics and Bioinformatics, Northern Cyprus}{}
+      {Systems Biology Analysis of Kinase Inhibitors in Cancer Cells Using NGS Data, 2017}{}
+    \CVSubheading
+      {XVI International Congress on Molecular Plant-Microbe Interactions,Rhodes, Greece}{}
+      {Hunting down of the endogenic microRNA like small RNAs in plant pathogenic and symbiotic fungi, 2014}{}
+    \CVSubheading
+      {Vienna Plant symposium}{}
+      {Is Blumeria graminis f. sp. hordei miRNAs controlling gene expression of barley? 2013}{}
+%-----PUBLICATIONS--------------------------------------------
+
+\section{Publications}
+  \CVItemListStart
+    \CVItem{\textbf{Kubra Narci}, Deniz Cansen Kahraman, Tulin Ersahin, Nurcan Tuncbagi Rengul Cetin Atalay (2022), Context dependent isoform specific PI3K inhibition confers drug resistance in Hepatocellular carcinoma cells, BMC Cancer.}
+
+    \CVItem{H. Serhat Tetikol; Deniz Turgut; \textbf{Kubra Narci}; Gungor Budak; Ozem Kalay; Elif Arslan; Sinem Demirkaya-Budak; Alexey Dolgoborodov; Duygu Kabakci-Zorlu; Vladimir Semenyuk. Pan-African genome demonstrates how population-specific genome graphs improve high-throughput sequencing data analysis. Nat Commun 13, 4384 (2022).}
+
+    \CVItem{Damla Gozen, Deniz C. Kahraman, \textbf{Kubra Narci}, Huma Shehwna, Ozlen Konu, Rengul Cetin-Atalay (2021). Transcriptome profiles associated with selenium deficiency dependent oxidative stress identify potential diagnostic and therapeutic targets in liver cancer cells, Turk J Biol.}
+
+    \CVItem{Olson N et al. (2022), precisionFDA Truth Challenge V2: Calling variants from short- and long-reads in difficult-to-map regions, Cell Genomics.}
+
+    \CVItem{\textbf{Kubra Narci}, Hasan Oğul, Mahinur Akkaya, (2016), Sequence-based microRNA clustering, International Conference on Bioinformatics Models, Methods and Algorithms, (BIOSTEC'16) Roma.}
+  \CVSubHeadingListEnd
+
+%-----HONORS AND AWARDS--------------------------------------------------------
+\section{Honors and Awards}
+  \CVSubHeadingListStart
+%    \CVSubheading %Example
+%      {What}{When}
+%      {Short Description}{}
+    \CVSubheading
+      {TUBITAK scholarship during bachelor, master, and doctorate studies}{2007 -- 2018}
+      {For being 4153rd place in National University Entrance Exam}{}
+    \CVSubheading
+      {Full boarding award}{2017}
+      {Summer School in Bioinformatics and NGS Data Analysis in Warsaw, Poland.}{}
+    \CVSubheading
+      {Bronze medal }{ 2012}
+      {IGEM 2012 Synthetic Biology Competition as a student in METU Team}{}
+    \CVSubheading
+      {Priority in university placements}{2007}
+      {Graduation from high school with first degree}{}
+  \CVSubHeadingListEnd
+
+%-----TEACHING EXPERIENCE------------------------------------------------------
+\begin{comment}
+Section is here as it applied to my application for positions in academia. 
+Remember to tailor the resume for to the position.
+\end{comment}
+
+\section{Teaching Experience}
+  \CVSubHeadingListStart
+%    \CVSubheading
+%      {What}{When}
+%      {School}{Where}
+    \CVSubheading
+      {Lecturing the course 'Introduction to Bioinformatics'}{2017 -- 2021}
+      {Biyoakademi}{Ankara, Turkey}
+    \CVSubheading
+      {GHGA webinars 'NGS workflow standardization and harmonization'}{2023}
+      {GHGA}{Heidelberg, Germany}
+  \CVSubHeadingListEnd
+
+%-----COMMUNITY INVOLVEMENT----------------------------------------------------
+\section{Community Involvement}
+  \CVSubHeadingListStart
+%    \CVSubheading %Example
+%      {What you did}{When you worked there}
+%      {Who you worked for}{Where they are located}
+    \CVSubheading
+      {Member of Educational Funds for Elementary School}{Fall 2007 -- Fall 2012}
+      {Voluntary help, aid, and teaching of students in the rural areas of Turkey}{Ankara, Turkey}
+  \CVSubHeadingListEnd
+
+%-----SKILLS-------------------------------------------------------------------
+\begin{comment}
+This section is compressed from the various skills sections that Euro CV
+recommends.
+\end{comment}
+
+\section{Skills}
+ \begin{itemize}[leftmargin=0.5cm, label={}]
+    \item{
+     \textbf{Languages}{: Turkish (Native), English (Advanced), German (Beginner)} \\
+    \textbf{Workflow Development}{: CWL and Nextflow} \\
+    \textbf{Containers}{: Docker, Singularity and Conda} \\
+    \textbf{Programming}{: Python (NumPy, SciPy, Matplotlib, Pandas, pysam),R , Perl, JavaScript} \\  
+     \textbf{Environments}{: Windows, Unix, Linux, MacOS, HPC} \\
+     \textbf{Document Creation}{: Microsoft Office Suite, LaTex, Markdown, Jupyter} \\
+     
+    }
+ \end{itemize}
+    
+%------------------------------------------------------------------------------
+\end{document}

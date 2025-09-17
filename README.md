@@ -1,6 +1,6 @@
-# Welcome to My GitHub Profile! 👋  
+# Welcome to My GitHub Profile! 
 
-I'm **Kübra Narcı**, a Bioinformatician at the **GHGA Workflows Team/DKFZ**, specializing in developing [Nextflow](https://www.nextflow.io/) pipelines. With a strong passion for creating reproducible and FAIR-compliant workflows, I contribute to advancing bioinformatics standards and tools.  
+I'm **Kübra Narcı**, a Bioinformatician at the **GHGA Workflows Team based in DKFZ (German Cancer Research Institute)**, specializing in worklfow development mostly using [Nextflow](https://www.nextflow.io/). With a strong passion for creating reproducible and FAIR-compliant workflows, I contribute to advancing bioinformatics standards and tools.  
 
 I’m also proud to be a **Nextflow Ambassador**, actively supporting and promoting the Nextflow community by sharing knowledge and best practices in workflow development.  
 
@@ -8,17 +8,12 @@ I’m also proud to be a **Nextflow Ambassador**, actively supporting and promot
 
 - **Role:** Bioinformatician and Bioinformatics Workflow Engineer 
 - **Location:** Heidelberg, Germany  
-- **Organization:** [GHGA](https://github.com/ghga-de) / [DKFZ-ODCF](https://github.com/DKFZ-ODCF)  
+- **Organization:** [GHGA](https://github.com/ghga-de) / [DKFZ-ODCF](https://github.com/DKFZ-ODCF)
 - **Values:** Reproducibility, FAIR Principles, Community Collaboration  
-
-As the **main developer of [nf-core/variantbenchmarking](https://github.com/nf-core/variantbenchmarking)**, I focus on providing standardized workflows for benchmarking variant-calling pipelines.  
 
 ## 🎓 Workshops  
 
-  
 - **FAIR-Compliant Workflow Design**: Teaching principles and practices to develop workflows that align with FAIR guidelines.  
-
-Whether you’re new to Nextflow or looking to refine your skills, my workshops provide hands-on learning opportunities to deepen your knowledge.  
 
 ## 🚀 Projects  
 
@@ -36,10 +31,14 @@ A standardized Nextflow pipeline for benchmarking variant-calling workflows, ena
   [View Repository](https://github.com/ghga-de/nf-snvcalling)  
 
 - **Nextflow ACE-Seq Pipeline**: A Nextflow ACE-Seq calling and annotation pipeline.  
-  [View Repository](https://github.com/ghga-de/nf-aceseq)  
-
+  [View Repository](https://github.com/ghga-de/nf-aceseq)
+  
+- **GRZ QC Pipeline**: A Nextflow pipeline to compute QC metrices for genome centers as part of GRZ.
+  [View Repository](https://github.com/BfArM-MVH/GRZ_QC_Workflow)
+  
 ### 📄 CV  
-[View my professional cv](https://github.com/kubranarci/kubranarci/CV_template.tex)  
+[View my professional cv as a template](https://github.com/kubranarci/kubranarci/CV_template.tex)  
+
 
 ## 🌟 Highlights  
 - **Bioinformatician at GHGA:** Driving the development of reproducible genomic workflows.  
@@ -52,7 +51,7 @@ A standardized Nextflow pipeline for benchmarking variant-calling workflows, ena
 - **Twitter:** [@kubranarci](https://twitter.com/kubranarci)  
 - **LinkedIn:** [in/kubranarci](https://www.linkedin.com/in/kubranarci/)  
 
-Feel free to explore my repositories and reach out if you’d like to collaborate, discuss workflow development, or attend one of my workshops. Let’s work together to advance bioinformatics!  
+Feel free to explore my repositories and reach out if you’d like to collaborate or discuss anything on workflow development. Let’s work together to advance bioinformatics!  
 
 ## 📊 GitHub Stats
 

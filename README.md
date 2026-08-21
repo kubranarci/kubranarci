@@ -1,6 +1,6 @@
 # Welcome to My GitHub Profile! 
 
-I'm **Kübra Narcı**, a Bioinformatician at the **GHGA Workflows Team based in DKFZ (German Cancer Research Institute)**, specializing in worklfow development mostly using [Nextflow](https://www.nextflow.io/). With a strong passion for creating reproducible and FAIR-compliant workflows, I contribute to advancing bioinformatics standards and tools.  
+I'm **Kübra Narcı**, a Bioinformatician at the **GHGA Workflows Team based in DKFZ (German Cancer Research Institute)**, specializing in worklfow development mostly using [Nextflow](https://www.nextflow.io/). With a strong passion for creating reproducible, optimised and FAIR-compliant workflows, I contribute to advancing bioinformatics standards and tools.  
 
 I’m also proud to be a **Nextflow Ambassador**, actively supporting and promoting the Nextflow community by sharing knowledge and best practices in workflow development.  
 
@@ -9,7 +9,7 @@ I’m also proud to be a **Nextflow Ambassador**, actively supporting and promot
 - **Role:** Bioinformatician and Bioinformatics Workflow Engineer 
 - **Location:** Heidelberg, Germany  
 - **Organization:** [GHGA](https://github.com/ghga-de) / [DKFZ-ODCF](https://github.com/DKFZ-ODCF)
-- **Values:** Reproducibility, FAIR Principles, Community Collaboration  
+- **Values:** Reproducibility, Optimisation, FAIR Principles, Community Collaboration  
 
 ## Workshops  
 
@@ -27,35 +27,27 @@ I’m also proud to be a **Nextflow Ambassador**, actively supporting and promot
 - [Nextflow Summit 2024:Leveraging Nextflow for the development of FAIR-compliant somatic variant calling workflows](https://www.youtube.com/watch?v=M-gMbxPpU1w&t=88s)
 - [Biyoenformatik Analizlerde Tekrarlanabilirlik](https://www.youtube.com/watch?v=AqNmIkoQrNo&t=5s)
 - [nf-core/bytesize: nf-core/variantbenchmarking](https://www.youtube.com/watch?v=nhrm3M1Fsg8&t=55s)
+- [Building Reproducible and Scalable Workflows with Nextflow](https://www.youtube.com/watch?v=LHfXn7JOr24&t=4s)
 
 ## Projects  
 
-Here are some of open resourse projects I’ve been working on:  
+Here are some of open resource projects I’ve been working on:  
 
 ### nf-core/variantbenchmarking  
-A standardized Nextflow pipeline for benchmarking variant-calling workflows, enabling reproducible and FAIR analysis.  
+A standardised Nextflow pipeline for benchmarking variant-calling workflows, enabling reproducible and FAIR analysis.  
 [View Repository](https://github.com/nf-core/variantbenchmarking)  
 
 ### Other Workflow Projects  
-- **Indel Calling Workflow**: A Nextflow-based indel calling workflow using Platypus.  
-  [View Repository](https://github.com/ghga-de/nf-platypusindelcalling)  
+- Migration of ODCF/DKFZ Roddy based pipelines to Nextflow 
+  - **[Indel Calling Workflow](https://github.com/ghga-de/nf-platypusindelcalling)**: A Nextflow-based indel calling workflow using Platypus.
+  - **[SNV Calling Pipeline](https://github.com/ghga-de/nf-snvcalling)**: A Nextflow SNV calling and annotation pipeline based on DKFZ-ODCF's SNVCallingWorkflow.
+  - **[ACE-Seq Pipeline](https://github.com/ghga-de/nf-aceseq)**: A Nextflow ACE-Seq calling and annotation pipeline.
+  - **[CNVkit Calling Pipeline](https://github.com/ghga-de/nf-cnvkitcalling)**: A Nextflow CNVkit calling and annotation pipeline.  
 
-- **SNV Calling Pipeline**: A Nextflow SNV calling and annotation pipeline based on DKFZ-ODCF's SNVCallingWorkflow.  
-  [View Repository](https://github.com/ghga-de/nf-snvcalling)  
-
-- **ACE-Seq Pipeline**: A Nextflow ACE-Seq calling and annotation pipeline.  
-  [View Repository](https://github.com/ghga-de/nf-aceseq)
-  
-- **CNVkit Calling Pipeline**: A Nextflow CNVkit calling and annotation pipeline.  
-  [View Repository](https://github.com/ghga-de/nf-cnvkitcalling)
-    
-- **GRZ QC Pipeline**: A Nextflow pipeline to compute QC metrices for genome centers as part of GRZ.
-  [View Repository](https://github.com/BfArM-MVH/GRZ_QC_Workflow)
-  
-### CV  
-[View my professional cv as a template](https://github.com/kubranarci/kubranarci/CV_template.tex)  
-
-
+### QC Pipelines
+- **[GRZ QC Pipeline](https://github.com/BfArM-MVH/GRZ_QC_Workflow)**: A Nextflow pipeline to compute QC metrices for genome centers as part of GRZ.
+- **[GHGA AQuA Pipeline](https://github.com/ghga-de/AQuA)**: Automated Quality Assesment nextflow pipeline for GHGA datasets
+   
 ## Highlights  
 - **Bioinformatician at GHGA:** Driving the development of reproducible genomic workflows.  
 - **Nextflow Ambassador:** Actively supporting and promoting the Nextflow community as part of my values.  
@@ -65,7 +57,7 @@ A standardized Nextflow pipeline for benchmarking variant-calling workflows, ena
 ## Connect with Me  
 - **LinkedIn:** [in/kubranarci](https://www.linkedin.com/in/kubranarci/)  
 
-Feel free to explore my repositories and reach out if you’d like to collaborate or discuss anything on workflow development. Let’s work together to advance bioinformatics!  
+Feel free to explore my repositories and reach out if you’d like to collaborate or discuss anything on workflow development.
 
 ## GitHub Stats
 
